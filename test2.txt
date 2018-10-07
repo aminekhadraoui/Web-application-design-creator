@@ -1,0 +1,37 @@
+<?php
+$docum=$_POST['cm'];
+echo "<h2 style='color:red;'>with htmlspecialchars </h2> ";
+echo"<br />";
+echo htmlspecialchars($docum);
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+</style>
+</head>
+<body>
+
+<form method="POST" action="test2.php">
+  
+<br />
+  <textarea name='cm'></textarea>
+  
+  <input type="submit" name="hello">
+</form>
+
+</body>
+</html>

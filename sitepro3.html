@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.parallax {
+    background-image: url("2.jpg");   
+    min-height: 500px;     
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body bgcolor="#424242">
+<ul>
+  <li><a href="sitepro.html">Home</a></li>
+  <li><a href="sitepro2.html">Download</a></li>
+  <li><a href="sitepro3.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+<div class="parallax"></div>
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="">
+    <label for="fname">Nom</label>
+    <input type="text" id="fname" name="firstname" placeholder="votre nom..">
+
+    <label for="lname">Prenom</label>
+    <input type="text" id="lname" name="lastname" placeholder="votre prenom..">
+
+    <label for="country">pays</label>
+    <select id="country" name="country">
+      <option value="australia">tunisia</option>
+      <option value="canada">maroc</option>
+      <option value="usa">algeria</option>
+    </select>
+
+    <label for="subject">suject</label>
+    <textarea id="subject" name="subject" placeholder="ecrire votre message.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

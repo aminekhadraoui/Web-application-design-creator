@@ -1,0 +1,46 @@
+program ex;
+uses wincrt;
+var
+up,backg,back,ch:string;
+k:integer;
+begin
+{background page or image}
+writeln('backgournd or color');
+readln(back);
+{choix d'image}
+if back ='background' then
+begin
+
+write ('image url ? / image dans votre PC (url/pc):');
+readln(up);
+if up = 'url' then 
+begin
+write('donner l''url de background : '); 
+readln(backg);
+readln(ch);
+k:=pos('""',ch)+1;
+insert(backg,ch,k);
+write(ch);
+end
+else if up ='pc' then
+begin
+write('donner le chemin de background : '); 
+readln(backg);
+readln(ch);
+k:=pos('""',ch)+1;
+insert(backg,ch,k);
+write(ch);
+end
+  else
+{choix de background color not image}
+if back='color' then
+begin
+write('donner le coleur : ');
+readln(backg);
+readln(ch);
+k:=pos('""',ch)+1;
+insert(backg,ch,k);
+write(ch)
+end;{delete write(ch) ==> test}
+end;
+end.

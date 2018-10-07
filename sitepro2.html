@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.parallax {
+    background-image: url("2.jpg");   
+    min-height: 500px;     
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button-orange {
+  background: #f4902a;
+  border-color: #df770c #df770c #c76a0a;
+  background-image: -webkit-linear-gradient(top, #f69f47, #f4902a 66%, #f38617);
+  background-image: -moz-linear-gradient(top, #f69f47, #f4902a 66%, #f38617);
+  background-image: -o-linear-gradient(top, #f69f47, #f4902a 66%, #f38617);
+  background-image: linear-gradient(to bottom, #f69f47, #f4902a 66%, #f38617);
+}
+.button-orange:active {
+  background: #f4902a;
+  border-color: #c76a0a #df770c #df770c;
+}
+h1 {
+    color: #BDBDBD;
+    font-family: verdana;
+    font-size: 300%;
+
+}
+
+</style>
+</head>
+<body bgcolor="#424242">
+<ul>
+  <li><a href="sitepro.html">Home</a></li>
+  <li><a href="sitepro2.html">Download</a></li>
+  <li><a href="sitepro3.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+
+<div class="parallax"></div>
+<center><h1>Telecharger votre Createur de website</h1>
+<button type="submit" onclick="window.location.href='modecre2.exe'" class="button-orange">Download!</button>
+</center>
+</div>
+</body>
+</html>

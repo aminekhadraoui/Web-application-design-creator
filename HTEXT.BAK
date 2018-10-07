@@ -1,0 +1,41 @@
+program best;
+uses wincrt;
+type
+tab=array [1..30] of string;
+var
+ch7,ch4,ch2,k2,k,k3:integer;
+i:string;
+t:tab;
+ch8,ch6,ch3,ch:string;
+procedure h (var t:tab);
+begin
+
+write('donner h? :');
+readln(i);
+write('donner le coleur de h: ');
+readln(ch3);
+t[1]:='<html>';
+t[2]:='<head><title></title></head>';
+t[3]:='<body bgcolor="">';
+t[4]:='<body background="">';
+t[5]:='<h align="" style="color:;"></h>';
+k3:=pos('h',t[5])+1;
+insert(i,t[5],k3);
+ch:=copy(t[5],pos(i,t[5]),1);
+k2:=length(t[5]);
+insert(ch,t[5],k2);
+ch2:=pos('color:',t[5])+6;
+insert(ch3,t[5],ch2);
+writeln('donner l''align (center/right/left)');
+readln(ch6);
+ch4:=pos('align="',t[5])+7;
+insert(ch6,t[5],ch4);
+writeln('donner votre text');
+readln(ch8);
+ch7:=pos('>',t[5])+1;
+insert(ch8,t[5],ch7);
+write('resultat',t[5]);
+end;
+begin
+h(t);
+end.

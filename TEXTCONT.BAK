@@ -1,0 +1,49 @@
+program best;
+uses wincrt;
+type
+tab=array [1..20] of string;
+var
+t:tab;
+procedure pra(var t:tab);
+var
+reponsec2:string;
+begin
+writeln('donner votre text');
+readln(reponsec2);
+t[1]:=t[1]+'<p>'+reponsec2+'</p>';
+end;
+procedure h (var t:tab);
+var
+begin
+writeln('donner votre text');
+readln(htext);
+writeln('donner votre ');
+t[1]:=t[1]+'<h align="'+halign+'" style="color:'+hcolort+';">'+htext+'</h>';
+end;
+
+
+procedure containerh (var t:tab);
+var
+reponsec:string;
+repoc:integer;
+begin
+t[1]:='<div class="container">';
+writeln('ecrire une text dans votre container ? (oui/non)');
+readln(reponsec);
+if reponsec ='oui' then
+repeat
+writeln('quelle est votre choix pour le text ? (p/h/strong/i/em/mark)');
+readln(repoc);
+case repoc of
+1:pra(t);
+2:h(t);
+end;
+until repoc=0;
+t[1]:=t[1]+'</div>';
+write(t[1]);
+end;
+begin
+containerh(t);
+
+
+end.

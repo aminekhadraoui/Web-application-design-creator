@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.parallax {
+    background-image: url("2.jpg");   
+    min-height: 500px;     
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>
+</head>
+<body bgcolor="#424242">
+<ul>
+ <li><a href="sitepro.html">Home</a></li>
+  <li><a href="sitepro2.html">Download</a></li>
+  <li><a href="sitepro3.html">Contact</a></li>
+  <li style="float:right"><a class="active" href="about.html">About</a></li>
+</ul>
+<div class="parallax"></div>
+</body>
+</html>
